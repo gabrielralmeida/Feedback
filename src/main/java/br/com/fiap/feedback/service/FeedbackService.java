@@ -1,4 +1,4 @@
-package br.com.fiap.feedback;
+package br.com.fiap.feedback.service;
 
 import java.time.Clock;
 import java.time.LocalDateTime;
@@ -8,6 +8,11 @@ import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.inject.Inject;
 import jakarta.validation.ConstraintViolation;
 import jakarta.validation.Validator;
+
+import br.com.fiap.feedback.dto.FeedbackRequest;
+import br.com.fiap.feedback.dto.FeedbackResponse;
+import br.com.fiap.feedback.model.Feedback;
+import br.com.fiap.feedback.repository.FeedbackStore;
 
 @ApplicationScoped
 public class FeedbackService {

@@ -1,7 +1,9 @@
-package br.com.fiap.feedback;
+package br.com.fiap.feedback.dto;
 
 import java.time.LocalDateTime;
 import java.util.List;
+
+import br.com.fiap.feedback.model.Feedback;
 
 public record FeedbackResponse(
         boolean sucesso,

@@ -1,10 +1,12 @@
-package br.com.fiap.feedback;
+package br.com.fiap.feedback.repository;
 
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
-final class MemoriaFeedbackStore implements FeedbackStore {
+import br.com.fiap.feedback.model.Feedback;
+
+public final class MemoriaFeedbackStore implements FeedbackStore {
 
     private final List<Feedback> registros = new ArrayList<>();
     private int proximaSequencia = 1;
@@ -17,7 +19,7 @@ final class MemoriaFeedbackStore implements FeedbackStore {
         return feedback;
     }
 
-    int quantidade() {
+    public int quantidade() {
         return registros.size();
     }
 }

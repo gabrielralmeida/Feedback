@@ -1,4 +1,4 @@
-package br.com.fiap.feedback;
+package br.com.fiap.feedback.service;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
@@ -15,6 +15,10 @@ import jakarta.validation.Validator;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+
+import br.com.fiap.feedback.dto.FeedbackRequest;
+import br.com.fiap.feedback.dto.FeedbackResponse;
+import br.com.fiap.feedback.repository.MemoriaFeedbackStore;
 
 class FeedbackServiceTest {
 

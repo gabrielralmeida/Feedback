@@ -1,4 +1,4 @@
-package br.com.fiap.feedback;
+package br.com.fiap.feedback.service;
 
 import java.time.Clock;
 import java.time.ZoneId;

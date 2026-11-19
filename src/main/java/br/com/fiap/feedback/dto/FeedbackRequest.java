@@ -1,4 +1,4 @@
-package br.com.fiap.feedback;
+package br.com.fiap.feedback.dto;
 
 import jakarta.validation.constraints.Max;
 import jakarta.validation.constraints.Min;

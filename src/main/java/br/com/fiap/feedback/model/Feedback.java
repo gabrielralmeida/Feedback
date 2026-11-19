@@ -1,4 +1,4 @@
-package br.com.fiap.feedback;
+package br.com.fiap.feedback.model;
 
 import java.time.LocalDateTime;
 
@@ -40,7 +40,7 @@ public class Feedback {
         this.nota = nota;
     }
 
-    void definirSequencia(Integer sequencia) {
+    public void definirSequencia(Integer sequencia) {
         this.sequencia = sequencia;
     }
 
